@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dosis&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -59,11 +59,12 @@ html {
     
 }
 body {
-        /* background-image: linear-gradient(161deg, rgb(0,141,182) 0%, rgb(51, 200, 108) 100%);
-        background-attachment: fixed;
-        height: 100vh; */
-        font-size: 1.6rem;
-        font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(161deg, rgb(210, 228, 196) 0%, rgb(0, 78, 100) 100%);
+    /*   background-attachment: fixed; */
+    /* height: 100vh; */
+    font-size: 2rem;
+    font-family: 'Dosis', sans-serif;
+    /* background-color: #39465f; */
       }
 
 header div.myName{
@@ -72,27 +73,34 @@ header div.myName{
     /* border: 2px solid blue; */
 }
 
+.myName{
+    color:#713e5a;
+    font-family: 'Caveat', cursive;
+}
+
 h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin: 0 0 2% 2%;
     padding: 2% 0 0 0;
     /* border: 2px solid red; */
-    /* text-shadow: 2px 2px 5px yellow; */
+    text-shadow: 2px 2px 5px #B5CBB7;
 }
 
 h2 {
-    font-size: 3rem;
-    margin: 2% 0;
+    font-size: 4.5rem;
+    
 }
 
 h3 {
     font-size:2.5rem;
 }
-
+section.aboutMeBox h2 {
+    margin: 2% 0;
+}
 
 
 header, footer {
-    background-color: #818479;
+    background-color: #9BA898;
     /* border:1px solid red; */
     
 }
@@ -103,11 +111,13 @@ header nav{
     display:flex;
 }
 
-header nav a{
-    padding: 20px;
+/* header nav */
+ a{
+    padding: 30px;
     margin: 0;
     background-color: #D2E4C4;
     border:1px solid black;
+    color: #004e64;
 }
 header nav a:first-of-type {
     background: #B5CBB7;
@@ -127,9 +137,16 @@ div.featuredProject {
 section.aboutMeBox {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-end;
+    justify-content: space-around;
     /* align-items:stretch; */
     width: 48%;
+}
+/* div.myProjects a{
+
+} */
+
+section.aboutMeBox div.aboutMeContent {
+    width:80%;
 }
 
 section.content div.portfolioContent {
@@ -146,15 +163,30 @@ div.projectContainer {
     text-align: center;
 }
 
-.projectContainer p {
+/* .projectContainer p {
     margin:0;
-}
+} */
 
 footer {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-around;
     align-items: center;
-    
+    padding: 5%;
+    /* border: 2px solid red; */
+}
+
+/* footer a {
+    margin: 2%;
+} */
+
+footer div.socialMedia {
+    display: flex;
+    margin: 2% 0 0 0;
+}
+footer a.bottomContact {
+    margin: 2% 0 0 0;
+
 }
 
 /* button {
@@ -175,6 +207,6 @@ a {
     text-decoration: none;
 }
 
-/* a:hover {
-    font-size: 2.5rem;
-} */
+a:hover {
+    font-size: 3rem;
+}
