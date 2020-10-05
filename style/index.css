@@ -175,13 +175,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 5%;
-    /* border: 2px solid red; */
 }
-
-/* footer a {
-    margin: 2%;
-} */
-
 footer div.socialMedia {
     display: flex;
     margin: 2% 0 0 0;
@@ -238,5 +232,69 @@ a:hover {
     }
     section.aboutMeBox div.aboutMeContent{
         flex-basis:75%;
+    }
+}
+@media (max-width: 500px){
+    
+    h1 {
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+
+    header nav{
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+
+    header nav a{
+        padding: 8px ;
+        text-align: center;
+        width: 150px;
+    }
+    section.aboutMeBox {
+        flex-flow: column nowrap;
+        align-items:center;
+        justify-content: center;
+        margin-bottom: 1%;;
+    }
+    div.myProjects {
+        margin:1.5% 0;
+    }
+
+    div.myProjects a{
+        padding: 8px;
+        width:150px;
+        display:block;
+        text-align:center;
+    }
+
+    .topContent .featuredProject{
+        width:85%;
+        margin-top: 2%;
+    }
+    section.content div.portfolioContent{
+        justify-content: space-evenly;
+    }
+    div.projectContainer {
+        width: 42%;
+        margin: 3% 0;
+    }
+    footer div.socialMedia {
+
+        flex-flow: column nowrap;
+        margin: 0;
+    }
+    footer a.bottomContact {
+        margin-bottom: 3%;
+    
+    }
+    footer a{
+        display:block;
+        text-align: center;
+        width: 150px;
+        padding:8px 0;
     }
 }
